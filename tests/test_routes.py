@@ -138,7 +138,7 @@ class TestAccountService(TestCase):
         self.assertEqual(resp.status_code, status.HTTP_200_OK)
         data = resp.get_json()
         self.assertEqual(len(data), 0)
-    
+
     def test_get_account(self):
         """It should Read a single Account"""
         account = self._create_accounts(1)[0]
